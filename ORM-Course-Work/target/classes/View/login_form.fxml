@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #3B1E54;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LoginFormController">
+   <children>
+      <AnchorPane fx:id="rootNode" accessibleRole="TEXT_FIELD" layoutX="646.0" layoutY="39.0" prefHeight="548.0" prefWidth="339.0" style="-fx-background-color: #9B7EBD;">
+         <children>
+            <Label layoutX="16.0" layoutY="131.0" text="Username:">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserName" layoutX="48.0" layoutY="176.0" prefHeight="42.0" prefWidth="266.0" promptText="Username" style="-fx-background-radius: 10;">
+               <styleClass>
+                  <String fx:value="edge-button" />
+                  <String fx:value="edge-button" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="15.0" layoutY="226.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <JFXButton blendMode="SRC_ATOP" buttonType="RAISED" cache="true" graphicTextGap="9.0" layoutX="38.0" layoutY="429.0" onAction="#btnLoginOnAction" prefHeight="42.0" prefWidth="256.0" style="-fx-background-color: #3B1E54; -fx-background-radius: 7;" styleClass="edge button" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+            </JFXButton>
+            <Label layoutX="104.0" layoutY="490.0" text="Don't have an account?" />
+            <Hyperlink layoutX="119.0" layoutY="515.0" onAction="#linkRegistrationOnAction" prefHeight="22.0" prefWidth="121.0" text="Register on here" />
+            <PasswordField fx:id="txtPassword" layoutX="47.0" layoutY="261.0" prefHeight="42.0" prefWidth="266.0" promptText="Password" style="-fx-background-radius: 10;" />
+            <ComboBox fx:id="cmbRole" layoutX="50.0" layoutY="350.0" prefHeight="42.0" prefWidth="266.0" style="-fx-background-radius: 10; -fx-background-color: white;" />
+            <Label layoutX="12.0" layoutY="303.0" text="Role:">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="27.0" text="WELCOME TO" textAlignment="CENTER">
+               <font>
+                  <Font name="Banwic Light" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="62.0" text="The Culinary Academy">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="625.0" fitWidth="615.0">
+         <image>
+            <Image url="@../Assets/icons/c6.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

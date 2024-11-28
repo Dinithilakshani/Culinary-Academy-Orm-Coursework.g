@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.AdminDashBoardFormController">
+   <children>
+      <AnchorPane layoutX="-50.0" layoutY="-12.0" prefHeight="720.0" prefWidth="361.0" style="-fx-background-color: #3B1E54; -fx-background-radius: 10;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="-5.0" layoutY="178.0" onAction="#btnDashboardOnAction" prefHeight="55.0" prefWidth="326.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Dash Board">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="54.0" fitWidth="69.0" layoutX="241.0" layoutY="179.0">
+               <image>
+                  <Image url="@../Assets/icons/dashboard-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="-5.0" layoutY="261.0" onAction="#btnStudentOnAction" prefHeight="55.0" prefWidth="326.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Student">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="-5.0" layoutY="338.0" onAction="#btnProgramOnAction" prefHeight="55.0" prefWidth="326.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Program">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="-14.0" layoutY="413.0" onAction="#btnPaymentOnAction" prefHeight="55.0" prefWidth="343.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Payment">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="2.0" layoutY="492.0" onAction="#btnEnrollmentOnAction" prefHeight="55.0" prefWidth="326.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Enrollment">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="2.0" layoutY="566.0" onAction="#btnUserOnAction" prefHeight="55.0" prefWidth="326.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="User" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="92.0" layoutY="660.0" onAction="#btnLogOutOnAction" prefHeight="46.0" prefWidth="190.0" style="-fx-background-color: red;" text="Log Out" textFill="#eae0e0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="245.0" layoutY="668.0">
+               <image>
+                  <Image url="@../Assets/icons/icons8-log-out-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="64.0" layoutX="248.0" layoutY="347.0">
+               <image>
+                  <Image url="@../Assets/icons/programer-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="66.0" layoutX="261.0" layoutY="571.0">
+               <image>
+                  <Image url="@../Assets/icons/user-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="85.0" layoutX="233.0" layoutY="261.0">
+               <image>
+                  <Image url="@../Assets/icons/student-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="200.0" layoutX="81.0" layoutY="-14.0">
+               <image>
+                  <Image url="@../Assets/icons/welcome-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="53.0" layoutX="261.0" layoutY="502.0">
+               <image>
+                  <Image url="@../Assets/icons/register-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="60.0" layoutX="258.0" layoutY="418.0">
+               <image>
+                  <Image url="@../Assets/icons/icons8-payment-60.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Load" layoutX="332.0" layoutY="102.0" prefHeight="588.0" prefWidth="925.0" style="-fx-background-color: #D1D8C5; -fx-background-radius: 20;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73ec8b" height="114.0" layoutX="51.0" layoutY="65.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="263.0" />
+            <Label layoutX="166.0" layoutY="81.0" text="Student Count">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStudentCount" layoutX="209.0" layoutY="109.0" prefHeight="35.0" prefWidth="66.0" text="30" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="342.0" layoutY="64.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="263.0" />
+            <Label layoutX="455.0" layoutY="78.0" text="Programs Count">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblProgramsCount" layoutX="507.0" layoutY="107.0" prefHeight="35.0" prefWidth="66.0" text="05" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="364.0" layoutY="87.0">
+               <image>
+                  <Image url="@../Assets/icons8-courses-64.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tblProgram" layoutX="62.0" layoutY="166.0" prefHeight="255.0" prefWidth="538.0">
+               <columns>
+                  <TableColumn fx:id="colID" prefWidth="78.66668701171875" text="Program Id" />
+                  <TableColumn fx:id="colName" prefWidth="222.00003051757812" text="Program Name" />
+                  <TableColumn fx:id="colDuration" prefWidth="128.6666259765625" text="Duration" />
+                  <TableColumn fx:id="colFee" prefWidth="107.3333740234375" text="Fee" />
+               </columns>
+            </TableView>
+            <Label layoutX="62.0" layoutY="234.0" text="Available Programs ">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73ec8b" height="114.0" layoutX="637.0" layoutY="61.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="263.0" />
+            <Label layoutX="767.0" layoutY="78.0" text="User Count">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="77.0" layoutY="87.0">
+               <image>
+                  <Image url="@../Assets/IMG-20241127-WA0025-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="77.0" layoutX="672.0" layoutY="77.0">
+               <image>
+                  <Image url="@../Assets/IMG-20241127-WA0027-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="355.0" fitWidth="253.0" layoutX="648.0" layoutY="199.0">
+               <image>
+                  <Image url="@../Assets/user%20information.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblProgramsCount1" layoutX="800.0" layoutY="104.0" prefHeight="35.0" prefWidth="66.0" text="02" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="lblTime" layoutX="947.0" layoutY="18.0" prefHeight="31.0" prefWidth="314.0" textFill="#89377f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="48.0" text="Admin Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="1175.0" layoutY="44.0">
+         <image>
+            <Image url="@../Assets/IMG-20241127-WA0028-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="241.0" layoutX="675.0" layoutY="15.0">
+         <image>
+            <Image url="@../Assets/IMG-20241127-WA0026-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
